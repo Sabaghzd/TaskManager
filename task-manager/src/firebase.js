@@ -5,7 +5,7 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAbC7OepabGghhQmIFHxUt8U1F2DMrocaA",
+    apiKey: "<YOUR-API-KEY>",
     authDomain: "taskmanager-c1378.firebaseapp.com",
     projectId: "taskmanager-c1378",
     storageBucket: "taskmanager-c1378.appspot.com",
