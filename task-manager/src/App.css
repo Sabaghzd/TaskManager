@@ -1,0 +1,132 @@
+/* General App Styles */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Light grey background for the entire app */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+.App-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #333; /* Dark gray text for title */
+  font-weight: 700; /* Bold font for emphasis */
+}
+
+.App-header p {
+  font-size: 18px;
+  color: #666; /* Lighter gray for subtitle */
+}
+
+/* Main Layout Container */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Constrain width for large screens */
+  background-color: #ffffff; /* White background for main content */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensure rounded corners are visible */
+  padding: 20px;
+}
+
+/* Left Column Styles */
+.left-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #e3f2fd; /* Light blue background for contrast */
+  border-radius: 12px; /* Matching rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Right Column Styles */
+.right-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f8e9; /* Light green background for contrast */
+  border-radius: 12px; /* Matching rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form Container */
+.add-task-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between elements */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between label and input */
+}
+
+/* Form Group Label */
+.form-group label {
+  font-size: 16px; /* Readable font size */
+  color: #333; /* Dark gray text for labels */
+  font-weight: 500; /* Semi-bold for emphasis */
+}
+
+/* Form Inputs */
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 16px; /* Consistent font size */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Light blue shadow for focus */
+}
+
+/* Textarea Specific Styles */
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Minimum height for usability */
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  font-weight: 500; /* Semi-bold text */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.submit-button:active {
+  transform: scale(1.02); /* Slightly shrink on click */
+}

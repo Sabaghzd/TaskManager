@@ -1,0 +1,72 @@
+.task-list-container {
+    height: 140vh; /* Fixed height for the container */
+    overflow-y: auto; /* Vertical scrollbar when content overflows */
+    border-radius: 4px; /* Optional: rounds the corners of the border */
+}
+
+.task-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transitions */
+}
+
+.task-item.done {
+    background-color: #f0f0f0; /* Light gray background for done tasks */
+    text-decoration: line-through; /* Strikethrough text for done tasks */
+    opacity: 0.6; /* Slightly fade out done tasks */
+    transform: translateY(100px); /* Move done tasks down */
+}
+
+.delete-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 18px;
+}
+
+.delete-icon:hover {
+    color: #c9302c;
+}
+
+.task-title {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.task-description {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+.task-dueDate {
+    font-size: 14px;
+    color: #888;
+}
+
+.loading, .error-message, .empty-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+.error-message {
+    color: #d9534f;
+}
+
+.empty-message {
+    color: #5bc0de;
+}

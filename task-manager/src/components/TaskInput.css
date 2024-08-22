@@ -1,0 +1,134 @@
+/* Task Input Styles */
+.task-input-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+/* Header and Instructions */
+.task-input-header {
+    font-size: 28px; /* Increased font size for better visibility */
+    color: #222; /* Darker grey for better readability */
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.instruction-text {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    color: #666; /* Medium grey for instructions */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.task-input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing */
+}
+
+.task-input-textarea {
+    padding: 12px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 80px; /* Ensure a minimum height for better usability */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.task-input-textarea:focus {
+    border-color: #007bff; /* Highlight border on focus with a blue color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Add subtle shadow for focus */
+}
+
+.submit-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff; /* White text color */
+    background-color: #4a90e2; /* Cool blue color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+    font-weight: 500; /* Slightly bolder text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.submit-button:disabled {
+    background-color: #d0e1f9; /* Light blue when disabled */
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #357abd; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Voice Controls Styles */
+.voice-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space above voice controls */
+}
+
+.voice-button {
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #f5f5f5; /* Light grey background for buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.voice-button.start {
+    color: #4a90e2; /* Blue color for start */
+}
+
+.voice-button.stop {
+    color: #e94e77; /* Soft red color for stop */
+}
+
+.voice-button.start:hover {
+    background-color: #e0f1ff; /* Light blue background on hover */
+    transform: scale(1.05);
+}
+
+.voice-button.stop:hover {
+    background-color: #fbe0e6; /* Light red background on hover */
+    transform: scale(1.05);
+}
+
+/* Response and No Support Messages */
+.response-message {
+    font-size: 16px;
+    color: #333; /* Dark grey text for response messages */
+    text-align: center;
+    font-weight: 500; /* Slightly bolder text */
+}
+
+.no-support {
+    text-align: center;
+    color: #e94e77; /* Soft red color for no support messages */
+    font-size: 18px; /* Slightly larger font size for emphasis */
+    font-weight: 600; /* Slightly bolder text for emphasis */
+}
+
+/* Icon Font Import */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');

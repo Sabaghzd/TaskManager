@@ -1,0 +1,72 @@
+/* Form Container */
+.add-task-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between elements */
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between label and input */
+}
+
+/* Form Group Label */
+.form-group label {
+    font-size: 16px; /* Readable font size */
+    color: #333; /* Dark grey for readability */
+    font-weight: 500; /* Semi-bold for emphasis */
+}
+
+/* Form Inputs */
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Consistent font size */
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Blue border on focus for clarity */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Light blue shadow for focus */
+}
+
+/* Textarea Specific Styles */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for usability */
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-weight: 500; /* Semi-bold text */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.submit-button:active {
+    transform: scale(1.02); /* Slightly shrink on click */
+}
