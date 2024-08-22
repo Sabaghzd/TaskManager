@@ -1,0 +1,19 @@
+firebase:
+  server:
+    key: 7feb279599ce6df393f813b6fc1a40ffd8e7a1cc
+  api:
+    url: https://fcm.googleapis.com/fcm/send
+
+
+  flyway:
+    enabled: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/TaskMng
+    username: postgres
+    password: 32301288
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
